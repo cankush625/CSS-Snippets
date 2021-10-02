@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    padding: 2em 5em;
+}
+
+h1 {
+    font-size: 2em;
+    padding-top: 1rem;
+}
+
+p {
+    padding: 2rem 0rem;
+}
+
+.start {
+    background-color: rgb(54 22 123);
+    color: white;
+}
+
+.end {
+    background-color: rgb(156 124 111);
+}
+
+.btn {
+    padding: 1em 2em;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.02em white solid;
+    color: white;
+}
+
+.btn-normal {
+    background-color: rgb(24, 49, 185);
+}
+
+.btn-normal:hover {
+    background-color: rgb(19, 39, 153);
+}
+
+.btn-awesome {
+    background-color: rgb(194, 92, 92);
+    box-shadow: 0.1em 0.5em 0.5em 0em rgba(18, 20, 27, 0.281);
+}
+
+.btn-awesome:hover {
+    background-color: rgb(158, 75, 75);
+    box-shadow: 0.1em 0.5em 0.5em 0.2em rgba(18, 20, 27, 0.281);
+    transform: translate(0em, -0.2em);
+    transition: 250ms;
+}
