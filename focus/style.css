@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:focus {
+    outline: none;
+}
+
+nav {
+    background-color: rgb(120, 245, 228);
+    height: 5.5em;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-inline: 1em;
+}
+
+.navigation li button {
+    text-decoration: none;
+    padding: 0.8em 2em;
+    background-color: rgb(111, 156, 240);
+    border: 0.2em white solid;
+    font-weight: bold;
+    color: rgb(52, 20, 104);
+}
+
+.navigation li button:hover,
+.navigation li button:focus {
+    background-color: rgb(102, 140, 211);
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(44, 28, 133);
+}
+
+a:hover,
+a:focus {
+    border-bottom: 0.2em white solid;
+}
