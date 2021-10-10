@@ -1,0 +1,15 @@
+/* Declaring the variable */
+/* 
+    Syntax:
+        .class-name {
+            --variable-name: value;
+        }
+ */
+.box {
+    --paragraph-background: red;
+}
+
+.box {
+    /* If value of --paragraph-background is not set then the purple will be taken else the valud of --paragraph-hackground will be taken */
+    background-color: var(--paragraph-background, purple);
+}
