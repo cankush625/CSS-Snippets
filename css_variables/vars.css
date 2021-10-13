@@ -4,6 +4,18 @@
         .class-name {
             --variable-name: value;
         }
+
+        OR
+
+        some-selector {
+            --variable-name: value;
+        }
+
+        OR
+
+        :root {
+            --variable-name: value;
+        }
  */
 .box {
     --paragraph-background: red;
