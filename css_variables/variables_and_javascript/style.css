@@ -1,0 +1,7 @@
+:root {
+    --bg-color: #ffff00;
+}
+
+.select-color {
+    background-color: var(--bg-color, red);
+}
