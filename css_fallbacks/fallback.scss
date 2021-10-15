@@ -1,0 +1,33 @@
+// Declaring the properties for CSS elements
+$vars: (
+    yellow: #ff0,
+    blue: #4682b4,
+    grey-color: #808080,
+    font-family: sans-serif,
+    upper-padding: 2em,
+);
+
+:root {
+    // Make the new line with each property and value using SCSS interpolation
+    @each $property, $value in $vars {
+        --#{$property}: #{$value};
+    }
+}
+
+h1 {
+    color: var(--blue, red);
+    background-color: var(--yellow, steelblue);
+}
+
+// Using Mixin for achieving fallback
+// Using Mixin to create the property with variable
+// When this code compile, it will create a fallback along with the variable version
+@mixin var($property, $variable) {
+    #{$property}: map-get($map: $vars, $key: $variable);
+    #{$property}: var(--#{$variable});
+}
+
+// Using Mixin var to generate the background property inside body with the fallback
+body {
+    @include var(background, grey-color)
+}

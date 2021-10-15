@@ -1,0 +1,18 @@
+:root {
+  --yellow: #ff0;
+  --blue: #4682b4;
+  --grey-color: #808080;
+  --font-family: sans-serif;
+  --upper-padding: 2em;
+}
+
+h1 {
+  color: var(--blue, red);
+  background-color: var(--yellow, steelblue);
+}
+
+body {
+  background: #808080;
+  background: var(--grey-color);
+}
+/*# sourceMappingURL=fallback.css.map */
